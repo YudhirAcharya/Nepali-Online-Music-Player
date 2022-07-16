@@ -1,4 +1,4 @@
-console.log("Welcome to Spotify");
+console.log("Welcome to Sloth Tunes");
 
 // Initialize the Variables
 let songIndex = 0;
@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    {songName: "Chitti vitra", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-    {songName: "ek sharvanam", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
-    {songName: "hataraidai bistaradi", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-    {songName: "hawaijahaj", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
-    {songName: "lukamari", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
-    {songName: "mayaloo", filePath: "songs/2.mp3", coverPath: "covers/6.jpg"},
-    {songName: "naganya maya", filePath: "songs/2.mp3", coverPath: "covers/7.jpg"},
+    {songName: "हे राम हे राम", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+    {songName: "हे कृष्ण आईदेउन", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+    {songName: "रामको नी नाम छैन", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+    {songName: "हवाइजहाज", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+    {songName: "लुकामारी", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
+    {songName: "मायालु", filePath: "songs/2.mp3", coverPath: "covers/6.jpg"},
+    {songName: "नगन्य माया", filePath: "songs/2.mp3", coverPath: "covers/7.jpg"},
     {songName: "parkhai", filePath: "songs/2.mp3", coverPath: "covers/8.jpg"},
-    {songName: "phukti jane", filePath: "songs/2.mp3", coverPath: "covers/9.jpg"},
-    {songName: "Na Jaana - Salam-e-Ishq", filePath: "songs/4.mp3", coverPath: "covers/10.jpg"},
+    {songName: "फुल्की जाने", filePath: "songs/2.mp3", coverPath: "covers/9.jpg"},
+    {songName: "उन्टा पाईला", filePath: "songs/4.mp3", coverPath: "covers/10.jpg"},
 ]
 
 songItems.forEach((element, i)=>{ 
@@ -87,7 +87,7 @@ document.getElementById('next').addEventListener('click', ()=>{
     audioElement.src = `songs/${songIndex+1}.mp3`;
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
-    audioElement.play();
+    audioElement.play();+
     masterPlay.classList.remove('fa-play-circle');
     masterPlay.classList.add('fa-pause-circle');
 
